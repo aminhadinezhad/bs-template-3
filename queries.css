@@ -1,0 +1,6 @@
+@media (max-width: 69em) {
+  .login-form__header {
+    background-color: red;
+    font-size: 3px !important;
+  }
+}

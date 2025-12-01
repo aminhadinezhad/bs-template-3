@@ -10,6 +10,58 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="css/style.css" />
+    <style>
+      .btn-custom {
+        color: #f6f6f6;
+        text-decoration: none;
+        background-color: #e05c0b;
+        transform: scaleY(0.9);
+        border-radius: 0.1rem;
+        padding: 0.5rem 1rem;
+        transition: 0.1s;
+      }
+
+      .btn-custom:link,
+      .btn-custom:visited {
+        color: #f6f6ff;
+        text-decoration: none;
+      }
+
+      .btn-custom:hover {
+        background-color: #c94f0a;
+      }
+
+      .btn-custom:focus {
+        box-shadow: 0 0 0 0.25rem rgba(224, 92, 11, 0.5);
+        outline: 0;
+      }
+
+      .bg-image {
+        position: relative;
+        overflow: hidden;
+      }
+
+      .bg-image::before {
+        content: '';
+        position: absolute;
+        inset: 0;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-image: inherit;
+        transition: transform 1s ease;
+        z-index: 1;
+      }
+
+      .bg-image:hover::before {
+        transform: scale(1.1);
+      }
+
+      .content {
+        position: relative;
+        z-index: 2;
+      }
+    </style>
     <title>bootstrap 5</title>
   </head>
   <body>
